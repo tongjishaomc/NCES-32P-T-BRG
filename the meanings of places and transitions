@@ -1,1 +1,44 @@
-
+\begin{table*}[!t] 
+  \renewcommand{\arraystretch}{1.2} 
+  \centering
+  \caption{Physical Interpretation of Places and Transitions}
+  \label{tab:physical_meaning} 
+  \begin{tabular}{llll}
+    \toprule 
+    Place & Physical meaning & Transition & Physical meaning \\
+    \midrule 
+    $p_1$  & Start observation task execution          & $t_1$  & Observation task completed \\
+    $p_2$  & Await observation task procedure          & $t_2$  & Start observation task procedure \\
+    $p_3$  & Observation task procedure in progress    & $t_3$  & Observation task procedure ends \\
+    $p_4$  & Transmitting observation data             & $t_4$  & Observation data transmission completed \\
+    $p_5$  & Await data transmission procedure         & $t_5$  & Data transmission procedure in progress \\
+    $p_6$  & Data transmission procedure completed     & $t_6$  & End data transmission procedure \\
+    $p_7$  & Observation data transmission completed   & $t_7$  & Await Robot~B execution module request \\
+    $p_8$  & Clearance for Robot~B execution granted   & $t_8$  & Return to idle state \\
+    $p_9$  & Start information reception               & $t_9$  & Receive information and start archiving \\
+    $p_{10}$ & Await information reception procedure   & $t_{10}$ & Start information reception procedure \\
+    $p_{11}$ & Information reception procedure in progress & $t_{11}$ & End information reception procedure \\
+    $p_{12}$ & Information archiving in progress       & $t_{12}$ & Information archiving completed \\
+    $p_{13}$ & Await archiving procedure               & $t_{13}$ & Start archiving procedure \\
+    $p_{14}$ & Archiving procedure in progress         & $t_{14}$ & End archiving procedure \\
+    $p_{15}$ & Archiving completed                     & $t_{15}$ & Return to idle state \\
+    $p_{16}$ & Initialization completed                & $t_{16}$ & Receiving memory module information \\
+    $p_{17}$ & Information reception completed         & $t_{17}$ & Issue Robot~B execution clearance \\
+    $p_{18}$ & Robot~B execution module available      & $t_{18}$ & Start search and localization task \\
+    $p_{19}$ & Search and localization task in progress & $t_{19}$ & Search and localization task completed \\
+    $p_{20}$ & Completion state                        & $t_{20}$ & Returning to available state \\
+    $p_{21}$ & Await localization coordinates          & $t_{21}$ & Acquiring object localization coordinates \\
+    $p_{22}$ & Object localization completed           & $t_{22}$ & Return to task-awaiting state \\
+    $p_{23}$ & Await search and localization procedure & $t_{23}$ & Start search and localization procedure \\
+    $p_{24}$ & Search and localization procedure in progress & $t_{24}$ & End search and localization procedure \\
+    $p_{25}$ & Robot~C execution module available      & $t_{25}$ & Start object grasping and transport task \\
+    $p_{26}$ & Object grasping and transport in progress & $t_{26}$ & Object grasping and transport task completed \\
+    $p_{27}$ & Await grasping and transport procedure  & $t_{27}$ & Start grasping and transport procedure \\
+    $p_{28}$ & Object transported to target location   & $t_{28}$ & Transport operation completed \\
+    $p_{29}$ & Transport task completed                & $t_{29}$ & End grasping and transport procedure \\
+    $p_{30}$ & Object grasping and transport completed & $t_{30}$ & Returning to available state \\
+    $p_{31}$ & Robot~A execution module available      & $t_{31}$ & Start processing operation \\
+    $p_{32}$ & Processing operation completed          & $t_{32}$ & Return to available state \\
+    \bottomrule 
+  \end{tabular}
+\end{table*}
